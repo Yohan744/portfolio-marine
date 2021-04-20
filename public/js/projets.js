@@ -36,7 +36,7 @@ for (let i = 0; i < projectNumber; i++) {
     sectionLeftWrapper.append(projectTitleWrapper, projectSubtitleWrapper, projectParagraphWrapper)
 
     const requestProjects = async () => {
-        const locationApi = "https://portfolio-b1.herokuapp.com/"
+        const locationApi = "https://marine-quetaud-portfolio.herokuapp.com/"
         //const locationApi = "http://localhost:3000/"
 
         const response = await axios.get(`${locationApi}getProjectMarine`)
@@ -83,7 +83,6 @@ const changeSection = function () {
     for (let i = 0; i < projectNumber; i++) {
         let sectionTarget = document.getElementById(`section${i}`)
         let navigationTarget = document.getElementById(`navigation${i}`)
-        let sectionTargetPrev = document.getElementById(`section${i-1}`)
 
 
         // Change section on scroll

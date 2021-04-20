@@ -76,8 +76,8 @@ new fullpage("#fullpage", {
     scrollingSpeed: 700,
     navigation: true,
     onLeave: (origin, destination, direction) => {
-        const section = destination.item
-        console.log(destination.item)
+        //const section = destination.item
+        //console.log(destination.item)
         //const text = section.querySelector('.presentationS1')
         //const image = section.querySelector('.imgPresentationS1')
         //const tl = new TimelineMax({delay: 0.75})
@@ -99,7 +99,7 @@ const thirdProjectTitleWrapper = document.getElementById('third-project-title-wr
 const thirdProjectSubtitleWrapper = document.getElementById('third-project-subtitle-wrapper')
 
 const requestProjects = async () => {
-    const locationApi = "https://portfolio-b1.herokuapp.com/"
+    const locationApi = "https://marine-quetaud-portfolio.herokuapp.com/"
     //const locationApi = "http://localhost:3000/"
 
     const response = await axios.get(`${locationApi}getProjectMarine`)
