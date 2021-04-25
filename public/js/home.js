@@ -126,7 +126,7 @@ let parallaxProjects = new Parallax(projects, {
 
 /*---------------------------------------Insert Projects------------------------------------------*/
 
-const welcomeImageWrapper = document.getElementById('welcome-right-wrapper')
+//const welcomeImageWrapper = document.getElementById('welcome-right-wrapper')
 
 const firstProjectTitleWrapper = document.getElementById('first-project-title-wrapper')
 const firstProjectSubtitleWrapper = document.getElementById('first-project-subtitle-wrapper')
@@ -146,10 +146,10 @@ const requestProjects = async () => {
     try {
         const datas = response.data
         datas.forEach(data => {
-            let verifWelcome = data.title.indexOf("Bonjour")
-            if ((verifWelcome !== -1) && (verifWelcome < 30)) {
-                welcomeImageWrapper.innerHTML = `<img src="${data.images.normal}" alt="image" class="image">`
-            }
+            //let verifWelcome = data.title.indexOf("Bonjour")
+            //if ((verifWelcome !== -1) && (verifWelcome < 30)) {
+                //welcomeImageWrapper.innerHTML = `<img src="${data.images.normal}" alt="image" class="image">`
+           // }
 
             let verifFirstProject = data.description.indexOf("Project0")
             if ((verifFirstProject !== -1) && (verifFirstProject < 30)) {

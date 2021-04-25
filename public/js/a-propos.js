@@ -10,7 +10,6 @@ const requestUser = async () => {
     const response = await axios.get(`${locationApi}getUser`)
 
     try {
-        console.log(response.data)
         const datas = response.data
         aProposParagraph.innerHTML += `<p id="a-propos-paragraph">${datas.bio}</p>`
         aProposImageWrapper.innerHTML = `<img src="${datas.avatar_url}" alt="image" class="a-propos-image">`
