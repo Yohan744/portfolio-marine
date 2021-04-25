@@ -12,6 +12,8 @@ body {
 
 $firstColorWhite: rgb(255,255,255);
 $secondColorBlack: rgb(33,33,33);
+$blue: #274E8D;
+$lightBlue: #507FBA;
 
 /*-----------------------------------------------A-Propos----------------------------------------------*/
 
@@ -28,9 +30,11 @@ $secondColorBlack: rgb(33,33,33);
 
 #a-propos-title {
   position: relative;
+  font-family: como,sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: 5vw;
-  font-weight: bold;
-  font-family: Allerta stencil, serif;
+  color: $blue;
 }
 
 #a-propos-paragraph {
@@ -78,4 +82,13 @@ $secondColorBlack: rgb(33,33,33);
   width: 40vw;
   display: flex;
   justify-content: center;
+}
+
+#software-wrapper {
+  position: absolute;
+  bottom: 5vh;
+  right: 0;
+  height: 7vh;
+  width: 60vw;
+  //background-color: red;
 }

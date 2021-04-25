@@ -127,7 +127,7 @@ html, body {
   height: 8vh;
   width: 8vh;
   border-radius: 100vh;
-  background-color: #212121;
+  background-color: #507FBA;
   transition: all 0.5s ease-in-out;
   z-index: 1;
 }
@@ -159,9 +159,10 @@ html, body {
   width: 86%;
   margin: 0 auto;
   text-align: center;
-  top: 43.5%;
+  top: 45%;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .navLink {
@@ -171,8 +172,11 @@ html, body {
 
 .navSpan {
   display: inline-block;
-  font-family: Poppins, serif;
-  font-size: 8vh;
+  position: relative;
+  font-family: como, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4vw;
   color: white;
   pointer-events: none;
   user-select: none;

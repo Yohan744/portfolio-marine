@@ -7,6 +7,7 @@
 
 $firstColorWhite: rgb(255,255,255);
 $secondColorBlack: rgb(33,33,33);
+$lightBlue: #507FBA;
 
 html, body {
   background-color: $firstColorWhite;
@@ -131,7 +132,7 @@ html, body {
   height: 8vh;
   width: 8vh;
   border-radius: 100vh;
-  background-color: $secondColorBlack;
+  background-color: $lightBlue;
   transition: all 0.5s ease-in-out;
   z-index: 1;
 }
@@ -165,9 +166,10 @@ html, body {
   width: 86%;
   margin: 0 auto;
   text-align: center;
-  top: 43.5%;
+  top: 45%;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .navLink{
@@ -177,8 +179,11 @@ html, body {
 
 .navSpan {
   display: inline-block;
-  font-family: Poppins, serif;
-  font-size: 8vh;
+  position: relative;
+  font-family: como,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4vw;
   color: $firstColorWhite;
   pointer-events: none;
   user-select: none;

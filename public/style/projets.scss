@@ -12,6 +12,8 @@ body {
 
 $firstColorWhite: rgb(255,255,255);
 $secondColorBlack: rgb(33,33,33);
+$blue: #274E8D;
+$lightBlue: #507FBA;
 
 /*---------------------------------------------Projets------------------------------------------*/
 
@@ -59,9 +61,9 @@ $secondColorBlack: rgb(33,33,33);
 
 .project-left-wrapper {
   position: absolute;
-  top: 17.5vh;
+  top: 20vh;
   left: 10vw;
-  height: 65vh;
+  height: 60vh;
   width: 35vw;
 }
 
@@ -90,14 +92,16 @@ $secondColorBlack: rgb(33,33,33);
 
 .project-title {
   position: relative;
-  font-size: 4vw;
-  font-weight: bold;
-  font-family: Allerta stencil, serif;
+  font-family: como,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4.5vw;
+  color: $blue;
 }
 
 .project-subtitle-wrapper {
   position: relative;
-  top: 0;
+  top: -2vh;
   left: 0;
   height: 10vh;
   width: 100%;
@@ -106,14 +110,16 @@ $secondColorBlack: rgb(33,33,33);
 }
 
 .project-subtitle {
-  position: relative;
-  font-size: 2.5vw;
-  font-family: Poppins, serif, serif;
+  font-family: neuzeit-grotesk, sans-serif;
+  color: $lightBlue;
+  font-size: 3vw;
+  font-style: normal;
+  font-weight: bold;
 }
 
 .project-paragraph-wrapper {
   position: relative;
-  top: 5vh;
+  top: 0;
   left: 0;
   height: 30vh;
   width: 100%;
@@ -122,7 +128,7 @@ $secondColorBlack: rgb(33,33,33);
 .project-paragraph {
   font-size: 1.1vw;
   font-family: Poppins, serif;
-  text-align: justify;
+  text-align: left;
 
   &:first-line {
     color: transparent;

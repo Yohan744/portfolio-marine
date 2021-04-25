@@ -27,9 +27,11 @@ body {
 
 #contact-title {
   position: relative;
+  font-family: como, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: 5vw;
-  font-weight: bold;
-  font-family: Allerta stencil, serif;
+  color: #274E8D;
 }
 
 #contact-wrapper-part-one {
@@ -49,18 +51,25 @@ body {
   width: 15vw;
 }
 
+.mailTo {
+  text-decoration: none;
+}
+
 .contact-title-label {
-  font-size: 1.8vw;
-  font-weight: bold;
-  font-family: Poppins, serif;
+  font-family: neuzeit-grotesk, sans-serif;
   color: #212121;
+  font-size: 1.8vw;
+  font-style: normal;
+  font-weight: bold;
 }
 
 .contact-text {
   position: relative;
   top: 0.5vh;
-  font-size: 1vw;
-  font-family: Poppins, serif;
+  font-size: 1.2vw;
+  font-family: neuzeit-grotesk, sans-serif;
+  font-style: normal;
+  font-weight: 400;
   color: #212121;
 }
 
@@ -103,7 +112,7 @@ body {
 
 #contact-title-label-name {
   position: relative;
-  left: 12.5vw;
+  left: 13.7vw;
 }
 
 #contact-wrapper-input-name {
@@ -120,17 +129,23 @@ body {
   border: none;
   border-bottom: 0.4vh solid #212121;
   outline: none;
-  font-size: 1vw;
-  font-family: Poppins, serif;
+  font-size: 1.2vw;
+  font-family: neuzeit-grotesk, sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 .contact-input-name::placeholder {
-  font-size: 1vw;
-  font-family: Poppins, serif;
+  font-size: 1.2vw;
+  font-family: neuzeit-grotesk, sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 .contact-input-name:focus {
-  font-size: 1vw;
+  font-size: 1.2vw;
+  font-family: neuzeit-grotesk, sans-serif;
+  font-style: normal;
+  font-weight: 400;
   color: #212121;
-  font-family: Poppins, serif;
 }
 
 #contact-label-email-wrapper {
@@ -144,17 +159,23 @@ body {
   border: none;
   border-bottom: 0.4vh solid #212121;
   outline: none;
-  font-size: 1vw;
-  font-family: Poppins, serif;
+  font-size: 1.2vw;
+  font-family: neuzeit-grotesk, sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 #contact-input-email::placeholder {
-  font-size: 1vw;
-  font-family: Poppins, serif;
+  font-size: 1.2vw;
+  font-family: neuzeit-grotesk, sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 #contact-input-email:focus {
-  font-size: 1vw;
+  font-size: 1.2vw;
+  font-family: neuzeit-grotesk, sans-serif;
+  font-style: normal;
+  font-weight: 400;
   color: #212121;
-  font-family: Poppins, serif;
 }
 
 #contact-input-text {
@@ -168,17 +189,23 @@ body {
   white-space: normal;
   resize: none;
   padding-top: 1.5vh;
-  font-size: 1vw;
-  font-family: Poppins, serif;
+  font-size: 1.2vw;
+  font-family: neuzeit-grotesk, sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 #contact-input-text::placeholder {
-  font-size: 1vw;
-  font-family: Poppins, serif;
+  font-size: 1.2vw;
+  font-family: neuzeit-grotesk, sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 #contact-input-text:focus {
-  font-size: 1vw;
+  font-size: 1.2vw;
+  font-family: neuzeit-grotesk, sans-serif;
+  font-style: normal;
+  font-weight: 400;
   color: #212121;
-  font-family: Poppins, serif;
 }
 #contact-input-text::-webkit-scrollbar {
   color: transparent;
@@ -195,7 +222,7 @@ body {
   font-size: 1.5vw;
   font-family: Poppins, serif;
   color: #212121;
-  transition: 0.6s;
+  transition: 0.5s;
   overflow: hidden;
   padding-right: 9.4vw;
 }
@@ -227,6 +254,26 @@ input:-webkit-autofill:active {
   font-family: Poppins, serif;
   font-size: 1vw;
   background-color: white;
+}
+
+#decoration-image-wrapper {
+  position: absolute;
+  bottom: -5vh;
+  left: 35vw;
+  height: 30vh;
+  width: 30vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.decoration-image {
+  position: relative;
+  height: 100%;
+  width: 33.33%;
+}
+
+#reverse-image {
+  transform: scaleX(-1);
 }
 
 /*# sourceMappingURL=contact.css.map */
