@@ -130,6 +130,92 @@ body {
     opacity: 1;
   }
 }
+/*---------------------------------------------Welcome-------------------------------------------*/
+#logo-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20vh;
+  width: 15vw;
+  background-color: red;
+}
+
+#welcome-right-wrapper {
+  position: absolute;
+  top: 3vh;
+  right: -1vw;
+  height: 94vh;
+  width: 50vw;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+#welcome-left-wrapper {
+  position: absolute;
+  top: 25vh;
+  left: 10vw;
+  height: 50vh;
+  width: 40vw;
+}
+
+#welcome-left-title-wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.welcome-left-title {
+  position: relative;
+  font-family: como, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 5vw;
+  color: #274E8D;
+}
+
+#welcome-left-subtitle-wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.welcome-left-subtitle {
+  font-family: neuzeit-grotesk, sans-serif;
+  color: #507FBA;
+  font-size: 3vw;
+  font-style: normal;
+  font-weight: bold;
+}
+
+#welcome-left-paragraph-wrapper {
+  position: relative;
+  top: 10vh;
+  left: 0;
+  height: 20vh;
+  width: 100%;
+}
+
+.welcome-left-paragraph {
+  position: relative;
+  font-size: 1.7vw;
+  font-family: neuzeit-grotesk, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #212121;
+}
+
 /*---------------------------------------------Project-------------------------------------------*/
 #first-project-wrapper {
   position: absolute;
@@ -173,7 +259,7 @@ body {
 .project-subtitle {
   font-family: neuzeit-grotesk, sans-serif;
   color: #507FBA;
-  font-size: 1.8vw;
+  font-size: 2.5vw;
   font-style: normal;
   font-weight: bold;
 }

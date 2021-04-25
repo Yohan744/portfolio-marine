@@ -26,6 +26,7 @@ $lightBlue: #507FBA;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  background-color: blue;
 }
 
 #a-propos-title {
@@ -76,10 +77,10 @@ $lightBlue: #507FBA;
 
 #a-propos-right-wrapper {
   position: absolute;
-  top: 15vh;
-  left: 50vw;
-  height: 70vh;
-  width: 40vw;
+  top: 5vh;
+  left: 45vw;
+  height: 90vh;
+  width: 55vw;
   display: flex;
   justify-content: center;
 }
