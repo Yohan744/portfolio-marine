@@ -186,15 +186,14 @@ const requestProjects = async () => {
                 thirdProjectImageWrapper.innerHTML = `<img src="${data.images.hidpi}" alt="image" class="project-image">`
             }
 
-            let verifWelcome = data.description.indexOf("Bonjour")
-            if (verifWelcome !== -1) {
-                console.log("testtt")
-                welcomeImageWrapper.innerHTML = `<img src="${data.images.hidpi}" alt="welcome" class="project-image">`
+            let verifWelcome = data.description.indexOf("Welcome")
+            if ((verifWelcome !== -1) && (verifWelcome < 30)) {
+                welcomeImageWrapper.innerHTML = `<img src="${data.images.hidpi}" alt="welcome" class="image">`
             }
 
-            let verifProjects = data.description.indexOf("project")
+            let verifProjects = data.description.indexOf("projet")
             if ((verifProjects !== -1) && (verifProjects < 30)) {
-                mesProjets.innerHTML = `<img src="${data.images.hidpi}" alt="project" class="project-image">`
+                mesProjets.innerHTML = `<img src="${data.images.hidpi}" alt="project" class="image">`
             }
 
         })
