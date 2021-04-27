@@ -139,6 +139,21 @@ let thirdParallaxFlower = new Parallax(thirdFlowerWrapper, {
     pointerEvents: true,
 })
 
+const firstLineTopWrapper = document.querySelector("#first-line-wrapper")
+let firstLineWrapper = new Parallax(firstLineTopWrapper, {
+    pointerEvents: true,
+})
+
+const secondLineTopWrapper = document.querySelector("#second-line-wrapper")
+let secondLineWrapper = new Parallax(secondLineTopWrapper, {
+    pointerEvents: true,
+})
+
+const thirdLineTopWrapper = document.querySelector("#third-line-wrapper")
+let thirdLineWrapper = new Parallax(thirdLineTopWrapper, {
+    pointerEvents: true,
+})
+
 /*---------------------------------------Insert Projects------------------------------------------*/
 
 const firstProjectTitleWrapper = document.getElementById('first-project-title-wrapper')
@@ -191,9 +206,9 @@ const requestProjects = async () => {
                 welcomeImageWrapper.innerHTML = `<img src="${data.images.hidpi}" alt="welcome" class="image">`
             }
 
-            let verifProjects = data.description.indexOf("projet")
+            let verifProjects = data.description.indexOf("Projets")
             if ((verifProjects !== -1) && (verifProjects < 30)) {
-                mesProjets.innerHTML = `<img src="${data.images.hidpi}" alt="project" class="image">`
+                mesProjets.innerHTML += `<img src="${data.images.hidpi}" alt="project" class="image">`
             }
 
         })

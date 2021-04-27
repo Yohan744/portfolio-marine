@@ -156,9 +156,9 @@ $lightBlue: #507FBA;
 #welcome-right-wrapper {
   position: absolute;
   top: 3vh;
-  right: -1vw;
+  right: -7vw;
   height: 94vh;
-  width: 50vw;
+  width: 65vw;
 }
 
 .image {
@@ -255,7 +255,7 @@ $lightBlue: #507FBA;
   font-family: como,sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 4vw;
+  font-size: 4.5vw;
   display: flex;
   color: $blue;
   align-items: center;
@@ -275,7 +275,7 @@ $lightBlue: #507FBA;
 .project-subtitle {
   font-family: neuzeit-grotesk, sans-serif;
   color: $lightBlue;
-  font-size: 2.5vw;
+  font-size: 3.5vw;
   font-style: normal;
   font-weight: bold;
 }
@@ -302,24 +302,6 @@ $lightBlue: #507FBA;
   transform: scale(1.1);
   opacity: 1;
   transition: all 0.5s cubic-bezier(0.25, 1, 0.3, 1);
-}
-
-.flower-wrapper {
-  position: absolute;
-  top: 45vh;
-  left: 27.5vw;
-  height: 45vh;
-  width: 17.5vw;
-  z-index: 10;
-}
-
-.line-wrapper {
-  position: absolute;
-  top: 25vh;
-  left: 40vw;
-  height: 60vh;
-  width: 30vw;
-  z-index: -1;
 }
 
 // Second Project
@@ -389,7 +371,7 @@ $lightBlue: #507FBA;
 
 #third-project-subtitle-wrapper {
   position: absolute;
-  margin-top: 10vh;
+  margin-top: 22.5vh;
   left: 0;
   height: 7vh;
   z-index: 1;
@@ -410,6 +392,59 @@ $lightBlue: #507FBA;
   transform: scale(1.1);
   opacity: 1;
   transition: all 0.5s cubic-bezier(0.25, 1, 0.3, 1);
+}
+
+/*---------------------------------------------Flower------------------------------------------*/
+
+#first-flower-wrapper {
+  position: absolute;
+  top: 45vh;
+  left: 27.5vw;
+  height: 45vh;
+  width: 17.5vw;
+  z-index: 10;
+}
+
+#first-line-wrapper {
+  position: absolute;
+  top: 26vh;
+  left: 64vw;
+  height: 7vh;
+  width: 4vw;
+}
+
+#second-flower-wrapper {
+  position: absolute;
+  top: 50vh;
+  left: 35vw;
+  height: 45vh;
+  width: 17.5vw;
+  z-index: 10;
+}
+
+#second-line-wrapper {
+  position: absolute;
+  top: 26vh;
+  left: 57vw;
+  height: 7vh;
+  width: 4vw;
+}
+
+#third-flower-wrapper {
+  position: absolute;
+  top: 50vh;
+  left: 35vw;
+  height: 45vh;
+  width: 17.5vw;
+  z-index: 10;
+}
+
+#third-line-wrapper {
+  position: absolute;
+  top: 26vh;
+  left: 59vw;
+  height: 7vh;
+  width: 4vw;
 }
 
 /*---------------------------------------------Projects------------------------------------------*/
@@ -444,3 +479,5 @@ $lightBlue: #507FBA;
   font-size: 1.3vw;
   margin-left: 2vw;
 }
+
+
