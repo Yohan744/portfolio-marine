@@ -108,24 +108,23 @@ html, body {
 }
 
 #menu-btn.open #menu-btn-burger {
-  transform: translateX(-5vw);
   background: transparent;
 }
 
 #menu-btn.open #menu-btn-burger::before {
-  transform: rotate(45deg) translate(3.5vw, -3.5vw);
+  transform: rotate(45deg);
 }
 
 #menu-btn.open #menu-btn-burger::after {
-  transform: rotate(-45deg) translate(3.5vw, 3.5vw);
+  transform: rotate(-45deg);
 }
 
 #menu-btn-active {
   position: absolute;
-  top: 45.85vh;
-  left: 2.1vw;
-  height: 8vh;
-  width: 8vh;
+  top: 46.5vh;
+  left: 2.4vw;
+  height: 7vh;
+  width: 7vh;
   border-radius: 100vh;
   background-color: #507FBA;
   transition: all 0.5s ease-in-out;
@@ -133,7 +132,7 @@ html, body {
 }
 
 #menu-btn-active.active {
-  transform: scale(55);
+  transform: scale(60);
   transition: all 0.5s ease-in-out;
   z-index: 2;
 }
