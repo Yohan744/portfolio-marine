@@ -21,11 +21,11 @@ $lightBlue: #507FBA;
   position: absolute;
   top: 20vh;
   left: 10vw;
-  height: 60vh;
+  height: 50vh;
   width: 35vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 #a-propos-title {
@@ -34,11 +34,13 @@ $lightBlue: #507FBA;
   font-weight: 700;
   font-style: normal;
   font-size: 5vw;
+  display: flex;
+  align-items: center;
   color: $blue;
 }
 
 .a-propos-paragraph {
-  font-size: 100vw;
+  font-size: 1.7vw;
   font-family: neuzeit-grotesk, sans-serif;
   text-align: left;
 
@@ -46,7 +48,6 @@ $lightBlue: #507FBA;
     color: transparent;
     user-select: none;
   }
-
 }
 
 #a-propos-download-wrapper {
@@ -59,9 +60,9 @@ $lightBlue: #507FBA;
 
 #a-propos-download-title {
   display: flex;
-  font-size: 1.3vw;
+  font-size: 1.7vw;
   font-weight: 400;
-  font-family: Poppins, serif;
+  font-family: neuzeit-grotesk, sans-serif;
   align-items: center;
 }
 
@@ -96,19 +97,61 @@ $lightBlue: #507FBA;
 
 #a-propos-right-wrapper {
   position: absolute;
-  top: 5vh;
-  left: 45vw;
-  height: 90vh;
-  width: 55vw;
+  top: 12.5vh;
+  left: 50vw;
+  height: 75vh;
+  width: 50vw;
   display: flex;
+}
+
+#software-wrapper-global {
+  position: absolute;
+  bottom: 3.5vh;
+  right: 0;
+  height: 7vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.software-wrapper {
+  position: relative;
+  height: 100%;
+  width: 4vw;
+}
+
+.software-image-wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 80%;
+  width: 100%;
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
-#software-wrapper {
-  position: absolute;
-  bottom: 5vh;
-  right: 0;
-  height: 7vh;
-  width: 60vw;
-  //background-color: red;
+.software-title-wrapper {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7vw;
+  font-family: neuzeit-grotesk, sans-serif;
+}
+
+.software-title {
+  position: relative;
+  font-size: 0.7vw;
+  font-family: neuzeit-grotesk, sans-serif;
+}
+
+.image-about {
+  position: relative;
+  height: 90%;
+  width: 90%;
 }

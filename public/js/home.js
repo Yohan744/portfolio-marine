@@ -207,12 +207,12 @@ const requestProjects = async () => {
                 thirdProjectImageWrapper.innerHTML = `<img src="${data.images.hidpi}" alt="image" class="project-image">`
             }
 
-            let verifWelcome = data.description.indexOf("Welcome")
+            let verifWelcome = data.title.indexOf("Bienvenue dans mon monde !")
             if ((verifWelcome !== -1) && (verifWelcome < 30)) {
                 welcomeImageWrapper.innerHTML = `<img src="${data.images.hidpi}" alt="welcome" class="image">`
                 welcomeTitleWrapper.innerHTML = `<h1 class="welcome-left-title">${data.tags}</h1>`
                 welcomeSubtitleWrapper.innerHTML = `<h1 class="welcome-left-subtitle">${data.title}</h1>`
-                welcomeParagraphWrapper.innerHTML = `<p class="welcome-left-paragraph">${data.description}</p>`
+                welcomeParagraphWrapper.innerHTML = `<div class="welcome-left-paragraph">${data.description}</div>`
             }
 
             let verifProjects = data.description.indexOf("Projets")

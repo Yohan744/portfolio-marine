@@ -179,7 +179,6 @@ $lightBlue: #507FBA;
   position: relative;
   top: 0;
   left: 0;
-  height: 10vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -199,7 +198,6 @@ $lightBlue: #507FBA;
   position: relative;
   top: 0;
   left: 0;
-  height: 10vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -215,9 +213,9 @@ $lightBlue: #507FBA;
 
 #welcome-left-paragraph-wrapper {
   position: relative;
-  top: 10vh;
+  top: 5vh;
   left: 0;
-  height: 20vh;
+  height: 15vh;
   width: 100%;
 }
 
@@ -228,6 +226,12 @@ $lightBlue: #507FBA;
   font-style: normal;
   font-weight: 400;
   color: $secondColorBlack;
+
+  &:first-line {
+    background-color: transparent;
+    user-select: none;
+  }
+
 }
 
 /*---------------------------------------------Project-------------------------------------------*/

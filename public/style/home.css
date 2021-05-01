@@ -165,7 +165,6 @@ body {
   position: relative;
   top: 0;
   left: 0;
-  height: 10vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -185,7 +184,6 @@ body {
   position: relative;
   top: 0;
   left: 0;
-  height: 10vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -201,9 +199,9 @@ body {
 
 #welcome-left-paragraph-wrapper {
   position: relative;
-  top: 10vh;
+  top: 5vh;
   left: 0;
-  height: 20vh;
+  height: 15vh;
   width: 100%;
 }
 
@@ -214,6 +212,10 @@ body {
   font-style: normal;
   font-weight: 400;
   color: #212121;
+}
+.welcome-left-paragraph:first-line {
+  background-color: transparent;
+  user-select: none;
 }
 
 /*---------------------------------------------Project-------------------------------------------*/
