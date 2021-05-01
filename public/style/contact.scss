@@ -27,7 +27,7 @@ $lightBlue: #507FBA;
 
 #contact-title-wrapper {
     position: absolute;
-    top: 5vh;
+    top: 3vh;
     left: 1.5vw;
 }
 
@@ -226,38 +226,25 @@ $lightBlue: #507FBA;
 
 .contact-input-send {
     position: relative;
-    height: 6.5vh;
+    height: 5vh;
     left: 20vw;
-    width: 25vw;
-    background: none;
+    width: 17vw;
+    //background: none;
     border: none;
+    border-radius: 10vw;
     outline: none;
     font-size: 1.5vw;
-    font-family: Poppins, serif;
-    color: $secondColorBlack;
+    font-family: neuzeit-grotesk, sans-serif;
+    color: $firstColorWhite;
     transition: 0.5s;
     overflow: hidden;
-    padding-right: 9.4vw;
+    background-color: $blue;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 
     &:focus {
         outline: none;
-    }
-
-    &:after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 0.4vh;
-        background: $secondColorBlack;
-        transform: scale(0, 1);
-        transform-origin: 0 100%;
-        transition: all 0.5s ease-in-out;
-    }
-
-    &:hover:after {
-        transform: scale(1, 1);
     }
 }
 
@@ -267,7 +254,7 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active  {
     transition: background-color 5000s;
     -webkit-text-fill-color: $secondColorBlack !important;
-    font-family: Poppins, serif;
+    font-family: neuzeit-grotesk, sans-serif;
     font-size: 1vw;
     background-color: $firstColorWhite;
 }

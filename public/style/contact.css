@@ -21,7 +21,7 @@ body {
 
 #contact-title-wrapper {
   position: absolute;
-  top: 5vh;
+  top: 3vh;
   left: 1.5vw;
 }
 
@@ -213,36 +213,24 @@ body {
 
 .contact-input-send {
   position: relative;
-  height: 6.5vh;
+  height: 5vh;
   left: 20vw;
-  width: 25vw;
-  background: none;
+  width: 17vw;
   border: none;
+  border-radius: 10vw;
   outline: none;
   font-size: 1.5vw;
-  font-family: Poppins, serif;
-  color: #212121;
+  font-family: neuzeit-grotesk, sans-serif;
+  color: white;
   transition: 0.5s;
   overflow: hidden;
-  padding-right: 9.4vw;
+  background-color: #274E8D;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 .contact-input-send:focus {
   outline: none;
-}
-.contact-input-send:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 0.4vh;
-  background: #212121;
-  transform: scale(0, 1);
-  transform-origin: 0 100%;
-  transition: all 0.5s ease-in-out;
-}
-.contact-input-send:hover:after {
-  transform: scale(1, 1);
 }
 
 input:-webkit-autofill,
@@ -251,7 +239,7 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   transition: background-color 5000s;
   -webkit-text-fill-color: #212121 !important;
-  font-family: Poppins, serif;
+  font-family: neuzeit-grotesk, sans-serif;
   font-size: 1vw;
   background-color: white;
 }
