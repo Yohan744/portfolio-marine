@@ -178,6 +178,7 @@ body {
   font-style: normal;
   font-size: 5vw;
   color: #274E8D;
+  text-transform: capitalize;
 }
 
 #welcome-left-subtitle-wrapper {
@@ -442,7 +443,7 @@ body {
   position: absolute;
   top: 23.5vh;
   left: 45vw;
-  height: 6vh;
+  height: 5vh;
   width: 10vw;
   border: none;
   outline: none;

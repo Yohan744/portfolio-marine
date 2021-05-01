@@ -13,10 +13,6 @@ html, body {
   background-color: $firstColorWhite;
 }
 
-a {
-  text-decoration: none;
-}
-
 /*-----------------------------------------------Cursor---------------------------------------------*/
 
 #cursor {
@@ -210,3 +206,20 @@ a {
     display: inline-block;
   }
 }*/
+
+/*-----------------------------------------------Text-----------------------------------------------*/
+
+a {
+  text-decoration: none;
+}
+
+.paragraph {
+  font-size: 1.1vw;
+  font-family: neuzeit-grotesk, sans-serif;
+  text-align: left;
+
+  &:first-line {
+    color: transparent;
+    user-select: none;
+  }
+}

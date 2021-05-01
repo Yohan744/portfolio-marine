@@ -10,10 +10,6 @@ html, body {
   background-color: white;
 }
 
-a {
-  text-decoration: none;
-}
-
 /*-----------------------------------------------Cursor---------------------------------------------*/
 #cursor {
   position: absolute;
@@ -203,5 +199,19 @@ a {
     display: inline-block;
   }
 }*/
+/*-----------------------------------------------Text-----------------------------------------------*/
+a {
+  text-decoration: none;
+}
+
+.paragraph {
+  font-size: 1.1vw;
+  font-family: neuzeit-grotesk, sans-serif;
+  text-align: left;
+}
+.paragraph:first-line {
+  color: transparent;
+  user-select: none;
+}
 
 /*# sourceMappingURL=main.css.map */

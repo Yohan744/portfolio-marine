@@ -192,6 +192,7 @@ $lightBlue: #507FBA;
   font-style: normal;
   font-size: 5vw;
   color: $blue;
+  text-transform: capitalize;
 }
 
 #welcome-left-subtitle-wrapper {
@@ -463,7 +464,7 @@ $lightBlue: #507FBA;
   position: absolute;
   top: 23.5vh;
   left: 45vw;
-  height: 6vh;
+  height: 5vh;
   width: 10vw;
   border: none;
   outline: none;

@@ -37,10 +37,16 @@ $lightBlue: #507FBA;
   color: $blue;
 }
 
-#a-propos-paragraph {
-  font-size: 1.1vw;
+.a-propos-paragraph {
+  font-size: 100vw;
   font-family: neuzeit-grotesk, sans-serif;
-  text-align: justify;
+  text-align: left;
+
+  &:first-line {
+    color: transparent;
+    user-select: none;
+  }
+
 }
 
 #a-propos-download-wrapper {
@@ -72,6 +78,20 @@ $lightBlue: #507FBA;
   height: 100%;
   object-fit: cover;
   background-size: cover;
+}
+
+#about-button {
+  position: relative;
+  left: 5vw;
+  height: 5vh;
+  width: 8vw;
+  border: none;
+  outline: none;
+  border-radius: 10vh;
+  background-color: $blue;
+  font-family: neuzeit-grotesk, sans-serif;
+  font-size: 1.5vw;
+  color: $firstColorWhite;
 }
 
 #a-propos-right-wrapper {
