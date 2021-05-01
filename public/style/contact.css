@@ -51,10 +51,6 @@ body {
   width: 15vw;
 }
 
-.mailTo {
-  text-decoration: none;
-}
-
 .contact-title-label {
   font-family: neuzeit-grotesk, sans-serif;
   color: #212121;
@@ -223,8 +219,8 @@ body {
   font-family: neuzeit-grotesk, sans-serif;
   color: white;
   transition: 0.5s;
-  overflow: hidden;
   background-color: #274E8D;
+  overflow: hidden;
   justify-content: center;
   display: flex;
   align-items: center;

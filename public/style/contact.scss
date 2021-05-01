@@ -57,10 +57,6 @@ $lightBlue: #507FBA;
     width: 15vw;
 }
 
-.mailTo {
-    text-decoration: none;
-}
-
 .contact-title-label {
     font-family: neuzeit-grotesk, sans-serif;
     color: $secondColorBlack;
@@ -229,7 +225,6 @@ $lightBlue: #507FBA;
     height: 5vh;
     left: 20vw;
     width: 17vw;
-    //background: none;
     border: none;
     border-radius: 10vw;
     outline: none;
@@ -237,8 +232,8 @@ $lightBlue: #507FBA;
     font-family: neuzeit-grotesk, sans-serif;
     color: $firstColorWhite;
     transition: 0.5s;
-    overflow: hidden;
     background-color: $blue;
+    overflow: hidden;
     justify-content: center;
     display: flex;
     align-items: center;

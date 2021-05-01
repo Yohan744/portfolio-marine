@@ -119,11 +119,14 @@ let parallaxThirdProject = new Parallax(thirdProjectWrapper, {
 
 // Projects
 
+/*
 const projects = document.getElementById('projects-wrapper')
 let parallaxProjects = new Parallax(projects, {
     pointerEvents: true,
 })
+/*
 
+ */
 const firstFlowerWrapper = document.querySelector("#first-flower-wrapper")
 let firstParallaxFlower = new Parallax(firstFlowerWrapper, {
     pointerEvents: true,
