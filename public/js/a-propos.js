@@ -30,9 +30,9 @@ requestProjects()
 /*-----------------------------------------Software------------------------------------------------*/
 
 const softwareWrapperGlobal = document.querySelector('#software-wrapper-global')
-let tabSoftware = ["Adobe XD","Illustrator","Photoshop","After effects","Indesign","Premiere","Lightroom","Ableton live","Whimsical","Trello","Miro","Lauchaco"]
+let tabSoftware = ["Adobe XD","Illustrator","Photoshop","After effects","Indesign","Premiere","Lightroom","Ableton live","Whimsical","Trello","Miro","Lauchaco","Figma"]
 
-softwareWrapperGlobal.style.width = `${tabSoftware.length * 5}vw`
+softwareWrapperGlobal.style.width = `${tabSoftware.length * 4.5}vw`
 
 for (let i=0; i<tabSoftware.length; i++) {
     const softwareWrapper = document.createElement("div")
@@ -47,7 +47,7 @@ for (let i=0; i<tabSoftware.length; i++) {
     softwareWrapper.append(softwareTitleWrapper)
 
     const softwareImage = document.getElementById(`softwareImageWrapper${i}`)
-    softwareImage.innerHTML = `<img src="../image/linkedin.svg" alt="software" class="image-about">`
+    softwareImage.innerHTML = `<img src="../image/software/software${i}.png" alt="software" class="image-about">`
     softwareTitleWrapper.append(tabSoftware[i])
 
 }

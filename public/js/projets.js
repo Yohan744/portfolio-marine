@@ -50,7 +50,12 @@ for (let i = 0; i < projectNumber; i++) {
                     sectionRightWrapper.innerHTML = `<img src="${data.images.hidpi}" alt="project" class="project-image">`
                     projectTitleWrapper.innerHTML = `<h1 class="project-title">${data.title}</h1>`
                     projectSubtitleWrapper.innerHTML = `<h1 class="project-subtitle">${data.tags}</h1>`
-                    projectParagraphWrapper.innerHTML = `<h4 class="project-paragraph">${data.description}</h4>`
+                    projectParagraphWrapper.innerHTML = `<div class="project-paragraph">${data.description}</div>`
+
+                    if (data.title.length > 13) {
+                        projectTitleWrapper.style.whiteSpace = "nowrap"
+                    }
+
                 }
             })
         } catch (err) {

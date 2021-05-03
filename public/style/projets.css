@@ -48,7 +48,6 @@ body {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  border-radius: 100%;
 }
 
 .project-left-wrapper {
@@ -65,6 +64,7 @@ body {
   right: 10vw;
   height: 70vh;
   width: 40vw;
+  background-color: red;
 }
 
 .project-image {
@@ -118,7 +118,7 @@ body {
 }
 
 .project-paragraph {
-  font-size: 1.1vw;
+  font-size: 1.4vw;
   font-family: neuzeit-grotesk, sans-serif;
   text-align: left;
 }

@@ -56,7 +56,6 @@ $lightBlue: #507FBA;
   height: 100%;
   width: 100%;
   object-fit: cover;
-  border-radius: 100%;
 }
 
 .project-left-wrapper {
@@ -73,6 +72,7 @@ $lightBlue: #507FBA;
   right: 10vw;
   height: 70vh;
   width: 40vw;
+  background-color: red;
 }
 
 .project-image {
@@ -126,7 +126,7 @@ $lightBlue: #507FBA;
 }
 
 .project-paragraph {
-  font-size: 1.1vw;
+  font-size: 1.4vw;
   font-family: neuzeit-grotesk, sans-serif;
   text-align: left;
 

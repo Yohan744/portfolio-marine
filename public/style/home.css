@@ -14,7 +14,7 @@ body {
 #navigation-wrapper {
   position: absolute;
   top: 20vh;
-  right: 0;
+  right: 0.75vw;
   height: 60vh;
   width: 5vw;
   display: flex;
@@ -117,12 +117,12 @@ body {
   50% {
     left: calc(50% - 0.125vw);
     height: 0.25vw;
-    width: 0.25vw;
+    width: 0.3vw;
   }
   100% {
     left: calc(50% - 0.125vw);
     height: 20vh;
-    width: 0.25vw;
+    width: 0.3vw;
   }
 }
 @keyframes animationActiveNavigationAfter {
@@ -218,6 +218,14 @@ body {
   user-select: none;
 }
 
+#scroll-wrapper {
+  position: absolute;
+  bottom: 2vh;
+  right: 1.15vw;
+  height: 8vh;
+  width: 4vw;
+}
+
 /*---------------------------------------------Project-------------------------------------------*/
 #first-project-wrapper {
   position: absolute;
@@ -247,6 +255,7 @@ body {
   display: flex;
   color: #274E8D;
   align-items: center;
+  background: transparent;
 }
 
 #first-project-subtitle-wrapper {
@@ -272,10 +281,9 @@ body {
 #first-project-image-wrapper {
   position: absolute;
   margin-top: 10vh;
-  margin-left: 10vw;
+  margin-left: 5vw;
   height: 60vh;
-  width: 30vw;
-  overflow: hidden;
+  width: 35vw;
   background-size: cover;
   transition: all 0.5s cubic-bezier(0.25, 1, 0.3, 1);
 }
@@ -324,7 +332,7 @@ body {
   margin-top: 10vh;
   margin-left: 7.5vw;
   height: 60vh;
-  width: 35vw;
+  width: 40vw;
   overflow: hidden;
   background-size: cover;
   transition: all 0.5s cubic-bezier(0.25, 1, 0.3, 1);
@@ -366,12 +374,13 @@ body {
 #third-project-image-wrapper {
   position: absolute;
   margin-top: 10vh;
-  margin-left: 10vw;
+  margin-left: 5vw;
   height: 60vh;
-  width: 30vw;
+  width: 35vw;
   overflow: hidden;
   background-size: cover;
   transition: all 0.5s cubic-bezier(0.25, 1, 0.3, 1);
+  background: red;
 }
 
 #third-project-image-wrapper:hover .project-image {

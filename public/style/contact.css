@@ -72,8 +72,8 @@ body {
 #contact-socialMedia-image {
   top: 1.2vh;
   position: relative;
-  height: 4vh;
-  width: 70%;
+  height: 3.5vh;
+  width: 50%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -123,7 +123,7 @@ body {
   height: 5vh;
   width: 18vw;
   border: none;
-  border-bottom: 0.4vh solid #212121;
+  border-bottom: 0.6vh solid #212121;
   outline: none;
   font-size: 1.2vw;
   font-family: neuzeit-grotesk, sans-serif;
@@ -153,7 +153,7 @@ body {
   height: 5vh;
   width: 100%;
   border: none;
-  border-bottom: 0.4vh solid #212121;
+  border-bottom: 0.6vh solid #212121;
   outline: none;
   font-size: 1.2vw;
   font-family: neuzeit-grotesk, sans-serif;
@@ -179,7 +179,7 @@ body {
   height: 15vh;
   width: 100%;
   border: none;
-  border-bottom: 0.4vh solid #212121;
+  border-bottom: 0.6vh solid #212121;
   outline: none;
   word-break: break-word;
   white-space: normal;
