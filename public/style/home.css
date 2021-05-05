@@ -380,7 +380,6 @@ body {
   overflow: hidden;
   background-size: cover;
   transition: all 0.5s cubic-bezier(0.25, 1, 0.3, 1);
-  background: red;
 }
 
 #third-project-image-wrapper:hover .project-image {
