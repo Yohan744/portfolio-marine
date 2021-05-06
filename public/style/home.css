@@ -10,6 +10,25 @@ body {
   overflow: hidden;
 }
 
+/*-----------------------------------------Loading screen----------------------------------------*/
+#loadingScreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  z-index: 999;
+  transition: all 2s cubic-bezier(0.25, 1, 0.3, 1);
+}
+
+.loading-image {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 /*---------------------------------------------Navigation-------------------------------------------*/
 #navigation-wrapper {
   position: absolute;
@@ -204,8 +223,7 @@ body {
   height: 15vh;
   width: 100%;
 }
-
-.welcome-left-paragraph {
+#welcome-left-paragraph-wrapper p {
   position: relative;
   font-size: 1.7vw;
   font-family: neuzeit-grotesk, sans-serif;
@@ -213,8 +231,8 @@ body {
   font-weight: 400;
   color: #212121;
 }
-.welcome-left-paragraph:first-line {
-  background-color: transparent;
+#welcome-left-paragraph-wrapper p:first-line {
+  color: transparent;
   user-select: none;
 }
 
@@ -291,7 +309,6 @@ body {
 .project-image {
   height: 100%;
   width: 100%;
-  opacity: 0.65;
   transition: all 0.5s cubic-bezier(0.25, 1, 0.3, 1);
 }
 
@@ -329,18 +346,24 @@ body {
 
 #second-project-image-wrapper {
   position: absolute;
-  margin-top: 10vh;
-  margin-left: 7.5vw;
-  height: 60vh;
-  width: 40vw;
+  margin-top: 5vh;
+  margin-left: 3vw;
+  height: 75vh;
+  width: 45vw;
   overflow: hidden;
   background-size: cover;
   transition: all 0.5s cubic-bezier(0.25, 1, 0.3, 1);
-  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.65;
 }
 
-#second-project-image-wrapper:hover .project-image {
-  transform: scale(1.1);
+#second-project-image-wrapper:hover {
+  margin-top: 2.5vh;
+  margin-left: 2vw;
+  height: 80vh;
+  width: 47.5vw;
   opacity: 1;
   transition: all 0.5s cubic-bezier(0.25, 1, 0.3, 1);
 }
@@ -373,17 +396,21 @@ body {
 
 #third-project-image-wrapper {
   position: absolute;
-  margin-top: 10vh;
+  margin-top: 13vh;
   margin-left: 5vw;
   height: 60vh;
   width: 35vw;
   overflow: hidden;
   background-size: cover;
   transition: all 0.5s cubic-bezier(0.25, 1, 0.3, 1);
+  opacity: 0.65;
 }
 
-#third-project-image-wrapper:hover .project-image {
-  transform: scale(1.1);
+#third-project-image-wrapper:hover {
+  margin-top: 10vh;
+  margin-left: 4vw;
+  height: 65vh;
+  width: 37.5vw;
   opacity: 1;
   transition: all 0.5s cubic-bezier(0.25, 1, 0.3, 1);
 }
@@ -434,7 +461,7 @@ body {
 
 #third-line-wrapper {
   position: absolute;
-  top: 26vh;
+  top: 24.5vh;
   left: 59vw;
   height: 7vh;
   width: 4vw;

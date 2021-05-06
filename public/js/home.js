@@ -15,6 +15,26 @@ new fullpage("#fullpage", {
     }
 })
 
+/*---------------------------------------Loading screen-----------------------------------------*/
+/*
+const loadingScreen = document.querySelector("#loadingScreen")
+let loadingVerif = false
+
+window.addEventListener("load", () => {
+    if (loadingVerif === false) {
+        loadingVerif = true
+        const cursor = document.querySelector("#cursor")
+        cursor.style.display = "none"
+        setTimeout(function() {
+            loadingScreen.style.top = "-100vh"
+            cursor.style.display = "block"
+            setTimeout(function() {
+                loadingScreen.parentElement.removeChild(loadingScreen)
+            }, 1);
+        }, 14000);
+    }
+})*/
+
 /*-------------------------------------------Navigation---------------------------------------------*/
 
 const navigationWrapper = document.querySelector("#navigation-wrapper")
@@ -60,12 +80,10 @@ const firstProjectImageWrapper = document.querySelector("#first-project-image-wr
 
 firstProjectImageWrapper.addEventListener("mouseenter", () => {
     cursor.classList.add("active")
-    cursor.style.backgroundColor = "white"
 })
 
 firstProjectImageWrapper.addEventListener("mouseleave", () => {
     cursor.classList.remove("active")
-    cursor.style.backgroundColor = "#212121"
 })
 
 // Second Project
@@ -74,12 +92,10 @@ const secondProjectImageWrapper = document.querySelector("#second-project-image-
 
 secondProjectImageWrapper.addEventListener("mouseenter", () => {
     cursor.classList.add("active")
-    cursor.style.backgroundColor = "white"
 })
 
 secondProjectImageWrapper.addEventListener("mouseleave", () => {
     cursor.classList.remove("active")
-    cursor.style.backgroundColor = "#212121"
 })
 
 // Third Project
@@ -88,12 +104,10 @@ const thirdProjectImageWrapper = document.querySelector("#third-project-image-wr
 
 thirdProjectImageWrapper.addEventListener("mouseenter", () => {
     cursor.classList.add("active")
-    cursor.style.backgroundColor = "#FFFFFF"
 })
 
 thirdProjectImageWrapper.addEventListener("mouseleave", () => {
     cursor.classList.remove("active")
-    cursor.style.backgroundColor = "#212121"
 })
 
 /*-------------------------------------------Parallax-------------------------------------------*/
@@ -207,12 +221,12 @@ const requestProjects = async () => {
                 thirdProjectImageWrapper.innerHTML = `<img src="${data.images.hidpi}" alt="image" class="project-image">`
             }
 
-            let verifWelcome = data.title.indexOf("Bienvenue dans mon monde !")
+            let verifWelcome = data.description.indexOf("Welcome")
             if ((verifWelcome !== -1) && (verifWelcome < 30)) {
                 welcomeImageWrapper.innerHTML = `<img src="${data.images.hidpi}" alt="welcome" class="image">`
                 welcomeTitleWrapper.innerHTML = `<h1 class="welcome-left-title">${data.tags}</h1>`
                 welcomeSubtitleWrapper.innerHTML = `<h1 class="welcome-left-subtitle">${data.title}</h1>`
-                welcomeParagraphWrapper.innerHTML = `<div class="welcome-left-paragraph">${data.description}</div>`
+                welcomeParagraphWrapper.innerHTML = `${data.description}`
             }
 
             let verifProjects = data.description.indexOf("Projets")
