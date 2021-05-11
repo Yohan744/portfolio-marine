@@ -48,7 +48,6 @@ if (animPlay === false) {
     loadingScreen.style.zIndex = "0";
 }
 
-
 /*-------------------------------------------Navigation---------------------------------------------*/
 
 const navigationWrapper = document.querySelector("#navigation-wrapper")
